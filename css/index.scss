@@ -1,0 +1,64 @@
+@import "_minix.scss";
+@import "common.scss";
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    .floor {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: pxTorem(41px);
+        @include box_flex;
+        overflow-x: scroll;
+        li {
+            flex-shrink: 0;
+            padding: 0 pxTorem(10px);
+            height: pxTorem(41px);
+            @include sizing;
+            line-height: pxTorem(41px);
+        }
+        li:hover {
+            border-bottom: 1px solid blue;
+            color: blue
+        }
+    }
+    .header {
+        width: 100%;
+        height: pxTorem(35px);
+        @include box_flex;
+        @include align;
+        @include justify;
+        input {
+            width: 80%;
+            height: pxTorem(24px);
+            background: #f6f6f6;
+            border-radius: pxTorem(10px);
+            border: none;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    .main {
+        width: 100%;
+        height: auto;
+        .home_box {
+            width: 100%;
+            height: pxTorem(165px);
+            border: 1px solid skyblue;
+            margin-bottom: pxTorem(10px);
+            border-radius: pxTorem(8px);
+            @include sizing;
+            .shop_top {
+                width: 100%;
+                height: pxTorem(52px);
+                line-height: pxTorem(52px);
+                border-bottom: 1px solid #DBDBDB;
+                span {
+                    margin-left: pxTorem(10px);
+                }
+            }
+        }
+    }
+}
