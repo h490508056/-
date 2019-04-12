@@ -3,6 +3,7 @@
 .wrapper {
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
     overflow-y: scroll;
     .floor {
         position: fixed;
@@ -39,10 +40,23 @@
             align-items: center;
             text-align: center;
         }
+=======
+    .header {
+        width: 100%;
+        height: pxTorem(43px);
+        @include box_flex;
+        @include justify(space-between);
+        @include align;
+        @include sizing;
+        padding: pxTorem(10px);
+        color: #6C6C6C;
+        font-size: pxTorem(16px);
+>>>>>>> 1bd8791260fbf852454aeaf88da317527f46ef08
     }
     .main {
         width: 100%;
         height: auto;
+<<<<<<< HEAD
         .home_box {
             width: 100%;
             height: pxTorem(165px);
@@ -57,6 +71,54 @@
                 border-bottom: 1px solid #DBDBDB;
                 span {
                     margin-left: pxTorem(10px);
+=======
+        .list1 {
+            width: 100%;
+            height: pxTorem(10px);
+            background: #E9E9E9;
+        }
+        .list2 {
+            width: 100%;
+            height: pxTorem(88px);
+            border-bottom: 1px solid #CDCDCD;
+            dl {
+                width: 100%;
+                height: 100%;
+                @include box_flex;
+                dt {
+                    width: 22.8%;
+                    height: 100%;
+                    img {
+                        width: pxTorem(60px);
+                        margin: pxTorem(15px) pxTorem(11px) pxTorem(13px) pxTorem(15px);
+                    }
+                }
+                dd {
+                    width: 77.2%;
+                    height: 100%;
+                    span {
+                        display: inline-block;
+                        margin-top: pxTorem(30px);
+                    }
+                }
+            }
+        }
+        ul {
+            li {
+                width: 100%;
+                height: pxTorem(60px);
+                @include box_flex;
+                @include align;
+                img {
+                    margin-left: pxTorem(15px);
+                    margin-right: pxTorem(15px);
+                }
+                span {
+                    font-size: pxTorem(16px);
+                }
+                i {
+                    margin-left: 60%;
+>>>>>>> 1bd8791260fbf852454aeaf88da317527f46ef08
                 }
             }
         }
